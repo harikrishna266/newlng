@@ -5,35 +5,49 @@
         <div class="col-lg-12 grid-margin stretch-card">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Add Students To  Program ({{$program->title}})</h4>
+               @if (\Session::has('message'))
+                  <div class="alert alert-danger">
+                      <ul>
+                          <li>{!! \Session::get('message') !!}</li>
+                      </ul>
+                  </div>
+              @endif
+              <h4 class="card-title"> Paid Students for Program  </h4>
               
               <table class="table">
                 <thead>
                   <tr>
                     <th>id</th>
-                    <th>Name</th>
-                    <th>email id</th>
-                    <th>phone no</th>
+                    <th>Student</th>
+                    <th>Program</th>
+                    <th>bank</th>
+                    <th>Amount</th>
                     <th>Action</th>
+
+                    
                   </tr>
                 </thead>
                 <tbody>
-                  @foreach ($students as  $student)
+                  
+                  @foreach($programs as $program ) 
                   <tr>
-                    <td> {{ $student->id }} </td>
-                    <td>{{ $student->name }}</td>
-                    <td>{{ $student->email }}</td>
-                    <td>456789</td>
+                    <td> {{ $program->id }} </td>
+                    <td> {{ $program->student->name }} </td>
+                    <td> {{ $program->program->title }}</td>
+                    <td> {{ $program->bank }}</td>
+                    <td> {{ $program->amount }}</td>                    
                     <td>
-                       <input type="checkbox">
+                        <a  href="{{ route('activateStudent',['program'=> $program->id]) }}" class="btn btn-primary ">
+                            {{$program->active}}
+                      </a>
                     </td>
                   </tr>
                   @endforeach
                 </tbody>
               </table>
-
             </div>
           </div>
     </div>
 </div>
+
 @endsection

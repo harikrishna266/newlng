@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Sessions extends Migration
+class ProgramStudents extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,15 @@ class Sessions extends Migration
      */
     public function up()
     {
-        Schema::create('Sessions', function (Blueprint $table) {
+         Schema::create('program_students', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('program_id')->index();
-            $table->string('date');
-            $table->string('venue');
-            $table->string('description');
-            $table->timestamp('created_at')->nullable();
+            $table->string('program_id')->integers();
+            $table->string('user_id')->integers();
+            $table->string('bank');
+            $table->string('amount');
+            $table->string('active');
+            $table->string('transaction_no');
+            $table->timestamps();
         });
     }
 

@@ -14,7 +14,7 @@
                     <th>Name</th>
                     <th>email id</th>
                     <th>phone no</th>
-                    <th>Action</th>
+                    
                   </tr>
                 </thead>
                 <tbody>
@@ -24,14 +24,7 @@
                     <td>{{ $student->name }}</td>
                     <td>{{ $student->email }}</td>
                     <td>456789</td>
-                    <td>
-                      <a href="#" class="btn btn-primary ">
-                            <i class="mdi mdi-pen"></i>
-                      </a>
-                      <a href="#" class="btn btn-primary ">
-                            <i class="mdi mdi-delete"></i>
-                      </a>
-                    </td>
+                    
                   </tr>
                   @endforeach
                 </tbody>

@@ -8,6 +8,6 @@ class Session extends Model
 {
   public function programs()
   {
-    return $this->BelongsTo('App\Programs');
+    return $this->belongsTo('App\Programs');
   }
 }

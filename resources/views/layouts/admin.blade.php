@@ -8,6 +8,8 @@
         <link href="{{ asset('css/mat.css') }}" rel="stylesheet">
         <link href="{{ asset('css/scroll.css') }}" rel="stylesheet">
         <link rel="shortcut icon" href="images/favicon.png" />
+        <link rel="stylesheet" type="text/css" href="//cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="css/material-icons.css">
     </head>
     <body>
         <div class="container-scroller">

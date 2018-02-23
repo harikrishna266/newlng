@@ -17,7 +17,10 @@ class Program extends Model
     'title', 'venue', 'description','date','test_activated'
   ];
 
-    
+  public function programs_studenet()
+  {
+    return $this->hasMany('App\ProgramStudents');
+  }
   public function sessions()
   {
     return $this->hasMany('App\Session');

@@ -13,11 +13,6 @@ class StudentController extends Controller
     return view('students.listAllStudents')->with('students', $students);;
   }
 
-  public function addStudentToProgram($programid) {
-    $students = \App\User::where('is_admin', 0)->get();
-    $program = \App\Program::find($programid);
-    return view('students.addStudentToProgram')->with('students', $students)
-                                              ->with('program', $program);    
-  }
+  
 
 }

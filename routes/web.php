@@ -15,8 +15,10 @@ Route::group(['middleware' => 'adminauth'], function () {
   Route::get('/logout','LoginController@Logout')->name('logout');  
   Route::get('/sessions','SessionController@listAllSessions')->name('listAllSessions');  
   Route::get('/students','StudentController@listAllStudents')->name('listAllStudents');  
-  Route::get('/programs/{id}/add','StudentController@addStudentToProgram')->name('addStudentToProgram');  
+
   
+  Route::get('/programs/{id}/add','ProgramStudentsController@addStudentToProgram')->name('addStudentToProgram');  
+  Route::get('/program/activate/{id}','ProgramStudentsController@activateStudent')->name('activateStudent');
 
 
   Route::get('/programs','ProgramController@listAllPrograms')->name('listAllPrograms');  
