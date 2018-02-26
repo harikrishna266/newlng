@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Sessions extends Migration
+class Test extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class Sessions extends Migration
      */
     public function up()
     {
-        Schema::create('Sessions', function (Blueprint $table) {
+        //
+        Schema::create('tests', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('program_id');
+            $table->integer('program_id');
             $table->string('title');
-            $table->string('date');
-            $table->string('venue');
-            $table->string('description');
+            $table->integer('duration');
+            $table->boolean('active')->default(0);
             $table->timestamps();
         });
     }

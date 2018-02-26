@@ -65,6 +65,18 @@
                             <i class="mdi mdi-home menu-icon"></i>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/test">
+                            <span class="menu-title">Tests</span>
+                            <i class="mdi mdi-home menu-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/test">
+                            <span class="menu-title">Tests</span>
+                            <i class="mdi mdi-home menu-icon"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <div class="content-wrapper">

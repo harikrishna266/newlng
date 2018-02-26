@@ -22,7 +22,7 @@
                     <th>Program</th>
                     <th>bank</th>
                     <th>Amount</th>
-                    <th>Action</th>
+                    <th>Activate</th>
 
                     
                   </tr>

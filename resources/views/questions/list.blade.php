@@ -12,25 +12,32 @@
                       </ul>
                   </div>
               @endif
-              <h4 class="card-title">Sessions</h4>
-              <a href="{{ route('showSessionForm') }}" > Session</a>
+              <h4 class="card-title">Questions</h4>
+              <a href="{{ route('addQeustionForm') }}" > add Qeustions</a>
               <table class="table">
                 <thead>
                   <tr>
-                    <th>session</th>
-                    <th>Program</th>
-                    <th>date</th>
-                    <th>venue</th>
+                    <th>Question</th>
+                    <th>Answer 1</th>
+                    <th>Answer 2</th>
+                    <th>Answer 3</th>
+                    <th>Answer 4</th>
+                    <th>Answer 5</th>
+                    <th>correct_answer</th>
                     <th>action</th>
                   </tr>
                 </thead>
                 <tbody>
-                 @foreach($sessions as $session )
+                 @foreach($questions as $question )
                   <tr>
-                    <td>{{$session->title}}</td>
-                    <td>{{$session->programs->title}}</td>
-                    <td>{{$session->date}}</td>
-                    <td>{{$session->venue}}</td>
+                    <td>{{$question->question}}</td>
+                    <td>{{$question->answer_1}}</td>
+                    <td>{{$question->answer_2}}</td>
+                    <td>{{$question->answer_3}}</td>
+                    <td>{{$question->answer_4}}</td>
+                    <td>{{$question->answer_5}}</td>
+                    <td>{{$question->correct_answer}}</td>
+                    
                     <td><label class="badge badge-danger">Pending</label></td>
                   </tr>
                  @endforeach

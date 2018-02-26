@@ -14,7 +14,7 @@
                   </div>
               @endif
               <h4 class="card-title">Programs</h4>
-              
+              <a href="{{ route('ShowProgramFrom') }}" >Add Programs</a>
               <table class="table">
                 <thead>
                   <tr>
