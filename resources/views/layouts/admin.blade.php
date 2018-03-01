@@ -72,8 +72,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/test">
-                            <span class="menu-title">Tests</span>
+                        <a class="nav-link" href="/questions">
+                            <span class="menu-title">Questions</span>
                             <i class="mdi mdi-home menu-icon"></i>
                         </a>
                     </li>

@@ -13,7 +13,7 @@
                   </div>
               @endif
               <h4 class="card-title">Questions</h4>
-              <a href="{{ route('addQeustionForm') }}" > add Qeustions</a>
+              <a href="{{ route('addQeustionForm') }}" > Add Questions</a>
               <table class="table">
                 <thead>
                   <tr>

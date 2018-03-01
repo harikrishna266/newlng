@@ -6,7 +6,7 @@
         <div class="col-12 grid-margin">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Questions</h4>
+              <h4 class="card-title">Add Questions</h4>
               <form class="form-horizontal" method="POST" action="{{ route('addquestions') }}">
                     {{ csrf_field() }}
 
